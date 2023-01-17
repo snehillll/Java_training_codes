@@ -10,6 +10,6 @@ public class SwapNumbers
 		x = x + y;   
         y = x - y;   
         x = x - y;   
-        System.out.println("After swapping: "+x +"  " + y);
+        System.out.println("After swapping: "+x+"  " + y);
 	}
 }
