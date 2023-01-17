@@ -1,5 +1,6 @@
 public class Employee{
 
+    static int count=0;
     int eID;
     String name;
     int salary;
@@ -10,13 +11,14 @@ public class Employee{
         this.name = name;
         this.company = company;
         this.salary = salary;
+        count++;
     }
 
     public int getId() {
         return eID;
     }
 
-    public String getname() {
+    public String getName() {
         return name;
     }
 
@@ -24,28 +26,34 @@ public class Employee{
         return salary;
     }
 
-    public String getLastName() {
+    public String getCompany() {
         return company;
     }
-    Employee e1=new Employee(1, "Snehil", "Bajaj", 1000000);
 
-    Employee e2=new Employee(2, "Pratyush", "Markets", 10000);
+    public void displayData(){
+        System.out.println("Employee id: "+eID+ " Name: "+" Salary: "+salary+" Company: "+company);
+    }
 
-    Employee e3=new Employee(3, "Ayush", "Finance", 100);
+    public static void main(String[] args){
+       
+        Employee[] arr = new Employee[3];
 
-    public int SalaryCount(){
-        int count=0;
-        if(e1.getSalary()>50000){
-            count++;
+        arr[0]= new Employee(1, "Snehil", "Bajaj", 10000000);
+        arr[1]= new Employee(2, "Pratyush", "Markets", 100000);
+        arr[2]= new Employee(3, "Ayush", "Finance", 1000);
+
+        System.out.println("Employees with salary greater than 50k");
+
+        for(int i=0; i<3; i++){
+            if(arr[i].salary>50000){
+                arr[i].displayData();
+            }
         }
-        if(e2.getSalary()>50000){
-            count++;
-        }
-        if(e3.getSalary()>50000){
-            count++;
-        }
-        return count;
 
+        System.out.println("Total number Of Objects Formed: "+count);
+
+
+        
     }
     
 }
