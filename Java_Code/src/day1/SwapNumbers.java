@@ -1,10 +1,6 @@
-package day1;
-
-
-import java.util.Scanner;
-
-
-public class SwapNumbers {
+import java.util.*;
+public class SwapNumbers
+{
 	public static void main(String[] args) {
 		System.out.println("Enter two numbers x and y: ");
 		Scanner sc = new Scanner(System.in);
@@ -14,8 +10,6 @@ public class SwapNumbers {
 		x = x + y;   
         y = x - y;   
         x = x - y;   
-        
-        
-        System.out.println("After swapping: "+x +"  " + y);
+        System.out.println("After swapping: "+x+"  " + y);
 	}
 }
