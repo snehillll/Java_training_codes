@@ -51,6 +51,9 @@ public class Employee{
         }
 
         System.out.println("Total number Of Objects Formed: "+count);
+        String a= (arr[0].toString());
+        System.out.println(a.charAt(2));
+        
 
 
         
