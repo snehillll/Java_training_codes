@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 import java.util.*;
+=======
+package day1;
+
+import java.util.Scanner;
+
+>>>>>>> abc
 public class MaxOfThreeNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,3 +24,7 @@ public class MaxOfThreeNumbers {
 	}
     
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> abc
